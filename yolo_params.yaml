@@ -1,0 +1,5 @@
+train: [dataset/clutter/train/images, dataset/couch_far_10/train/images, dataset/far_10_half_clutter/train/images, dataset/film_grain_10_half_clutter/train/images, dataset/large_plant_10/train/images, dataset/no_clutter_10/train/images, dataset/table_close_10/train/images] 
+val: [dataset/clutter/val/images, dataset/couch_far_10/val/images, dataset/far_10_half_clutter/val/images, dataset/film_grain_10_half_clutter/val/images, dataset/large_plant_10/val/images, dataset/no_clutter_10/val/images, dataset/table_close_10/val/images]
+test: dataset/test
+nc: 1
+names: ['Soup']
