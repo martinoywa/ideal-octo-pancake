@@ -1,2 +1,5 @@
 dataset/
 ENV_SETUP/
+runs/
+predictions/
+yolo*.pt

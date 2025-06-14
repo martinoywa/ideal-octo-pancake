@@ -6,7 +6,7 @@ import sys
 def predictions_to_csv(
     preds_folder: str = "predictions/labels", 
     output_csv: str = "submission.csv", 
-    test_images_folder: str = "TestImages/images",
+    test_images_folder: str = "dataset/test/images",
     allowed_extensions: tuple = (".jpg", ".png", ".jpeg")
 ):
     """
@@ -92,7 +92,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Convert YOLO predictions to Kaggle CSV")
     parser.add_argument("--preds_folder", default="predictions/labels", help="Folder with prediction .txt files")
     parser.add_argument("--output_csv", default="submission.csv", help="Output CSV filename")
-    parser.add_argument("--test_images_folder", default="TestImages/images", 
+    parser.add_argument("--test_images_folder", default="dataset/test/images", 
                       help="Path to test images directory")
     args = parser.parse_args()
 

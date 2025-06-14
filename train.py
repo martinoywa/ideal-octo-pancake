@@ -1,4 +1,4 @@
-EPOCHS = 10
+EPOCHS = 50
 MOSAIC = 0.4
 OPTIMIZER = 'AdamW'
 MOMENTUM = 0.9
@@ -33,7 +33,7 @@ if __name__ == '__main__':
     results = model.train(
         data=os.path.join(this_dir, "yolo_params.yaml"), 
         epochs=args.epochs,
-        device=0,
+        device="cuda",
         single_cls=args.single_cls, 
         mosaic=args.mosaic,
         optimizer=args.optimizer, 
